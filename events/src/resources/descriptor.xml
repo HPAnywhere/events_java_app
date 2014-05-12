@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<miniAppDescriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" serviceName="events" xsi:noNamespaceSchemaLocation="http://com.hp.ee.server.descriptor/">
+    <apiVersion>1.0.23</apiVersion>
+    <miniAppVersion>1.0.23</miniAppVersion>
+    <vendorId>HP</vendorId>
+    <connectionDetails>
+        <miniAppRootContext>events-web</miniAppRootContext>
+    </connectionDetails>
+    <webResources>
+        <webResource>
+            <formFactor>SMARTPHONE</formFactor>
+            <jsNames>
+				<jsName>enyo/lib/enyo.js</jsName>
+				<jsName>app/common/app-min.js</jsName>
+            </jsNames>
+            <cssNames>
+            <cssName>enyo/lib/enyo.css</cssName>
+            <cssName>app/common/app-min.css</cssName>
+            </cssNames>
+        	<iconResource>images/common/events_logo.png</iconResource>
+			<dev>
+	            <jsNames>	
+		            <jsName>enyo/lib/enyo.js</jsName>
+		            <jsName>package.js</jsName>	
+                    <!-- <jsName>app/common/app-min.js</jsName> -->
+	            </jsNames>
+	            <cssNames>
+		            <cssName>enyo/lib/enyo.css</cssName>
+	            </cssNames>		
+			</dev>        
+        </webResource>
+        <webResource>
+            <formFactor>TABLET</formFactor>
+            <jsNames>
+                <jsName>enyo/lib/enyo.js</jsName>
+                <!-- <jsName>package.js</jsName> -->
+                 <jsName>app/common/app-min.js</jsName>
+            </jsNames>
+            <cssNames>
+                <cssName>enyo/lib/enyo.css</cssName>
+	            <cssName>app/common/app-min.css</cssName>
+            </cssNames>
+            <iconResource>images/common/events_logo.png</iconResource>
+            <dev>
+	            <jsNames>	
+		            <jsName>enyo/lib/enyo.js</jsName>
+		            <jsName>package.js</jsName>	
+                    <!-- <jsName>app/common/app-min.js</jsName> -->
+	            </jsNames>
+	            <cssNames>
+		            <cssName>enyo/lib/enyo.css</cssName>
+	            </cssNames>		            
+            </dev>
+        </webResource>
+    </webResources>
+    <hasSummaryData>true</hasSummaryData>
+</miniAppDescriptor>

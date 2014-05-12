@@ -1,0 +1,71 @@
+<context name="events" category="events" xmlns="SettingsManager.dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="SettingsManager.dtd http://com.hp.ee.server.admin.settings/ ">
+    <!-- Enable/Disable the 'ping to server' mechanism that keeps the session alive -->
+
+    <!-- App Supported Notification Types                      -->
+    <!-- supported values are: FRONTPAGE, EMAIL, PUSH_NOTIFICATION, NONE -->
+    <setting name="new.event.notification"
+             sectionKey="sections.notification.types.name"
+             nameKey="settings.notification.type.new.event.name"
+             descKey="settings.notification.type.new.event.desc"
+             refreshRate="Immediate"
+             settingType="global"
+             required="true"
+             displayInUI="true">
+        <string>FRONTPAGE</string>
+    </setting>
+
+    <!-- HP Anywhere Server Base URL  -->
+    <setting name="hpa.server.base.url"
+             sectionKey="sections.hpa.access.name"
+             nameKey="settings.hpa.server.base.url.name"
+             descKey="settings.hpa.server.base.url.desc"
+             refreshRate="Immediate"
+             settingType="global"
+             required="true"
+             displayInUI="true">
+        <string>http://localhost:8080</string>
+    </setting>
+    
+    <!-- Auto Create Activity Setting -->
+    <!-- supported values are: true, false -->
+    <!-- true means support auto create activity, false means doesn't -->
+    <setting name="auto.create.activity"
+             sectionKey="sections.event.logic.name"
+             nameKey="settings.auto.create.activity.name"
+             descKey="settings.auto.create.activity.desc"
+             refreshRate="Immediate"
+             settingType="global"
+             required="true"
+             displayInUI="true">
+        <boolean>true</boolean>
+    </setting>
+    
+    <!--  Authentication Setting -->
+    <!-- supported values are: LWSSO, BasicAuth -->
+    <setting name="authentication.policy"
+             sectionKey="sections.authentication.name"
+             nameKey="settings.authentication.policy.name"
+             descKey="settings.authentication.policy.desc"
+             refreshRate="Immediate"
+             displayInUI="true"
+             settingType="global">
+        <enumeration>
+            <enum value="LWSSO" default="true"/>
+            <enum value="BasicAuth"/>
+        </enumeration>
+    </setting>
+    
+    <!-- Client Offline Settings-->
+    <!-- supported values are: true, false -->
+    <!-- true means support offline, false means doesn't -->
+    <setting name="client.support.offline.mode"
+             sectionKey="sections.general.client.name"
+             nameKey="settings.general.client.support.offline.mode.name"
+             descKey="settings.general.client.support.offline.mode.desc"
+             refreshRate="Immediate"
+             settingType="global"
+             required="true"
+             displayInUI="true">
+        <boolean>false</boolean>
+    </setting>
+</context>

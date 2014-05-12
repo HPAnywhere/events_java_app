@@ -1,0 +1,15 @@
+<!-- Recipe 5 -->
+<category name="events" version="1.01.00" >
+    <context name="events.sortSettings" nameKey="events.sortSettings.key">
+        <setting name="events.sortSettings.sortBy"
+                 nameKey="events.sortSettings.sortBy.key"
+                 descriptionKey="events.sortSettings.sortBy.description.key"
+                 displayInUI="true"
+                 required="true">
+            <enumeration
+                    enum="events.sortSettings.sortBy.title,events.sortSettings.sortBy.date">
+                events.sortSettings.sortBy.title
+            </enumeration>
+        </setting>
+    </context>
+</category>
